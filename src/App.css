@@ -144,7 +144,7 @@ body {
   border-radius: 10px;
 height:350px;
 width:1200px;
-   
+overflow: hidden;
 }
 .furniture-sec1{
   margin-top: 80px;
@@ -152,13 +152,17 @@ width:1200px;
   border-radius: 10px;
 height:350px;
 width:1200px;
-   
+overflow: hidden;
 }
 
 .dining-img{
   height:350px;
   width:470px;
   float:left;
+  transition:all 1s ease-in-out;
+}
+.dining-img:hover{
+  transform:scale(1.1);
 }
 
 .suggestion{
