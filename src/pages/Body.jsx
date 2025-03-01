@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export default function Body(){
     return(
         <div className="body">
@@ -10,7 +12,7 @@ export default function Body(){
                  room is more than just a place to eat; it’s a<br></br> hub of family
                   discussions, hearty la...</p>
           
-           <a href="#" className="more"><u>Read More</u></a>
+           <Link to="/dining" className="more"><u>Read More</u></Link>
            </div>
            </div>
            <div className="furniture-sec1">
@@ -20,7 +22,7 @@ export default function Body(){
             <p className="readme">Imagine a beautifully set dining table, delicious food, and loved ones gathered<br></br> for your dining area. The dining
             around, sharing stories and laughter.<br></br> The dining table is more than just a piece of furniture; it is the centrepiece ...</p>
           
-           <a href="#" className="more"><u>Read More</u></a>
+           <Link to="/moderndining" className="more"><u>Read More</u></Link>
            </div>
            </div>
            <div className="furniture-sec1">
@@ -31,7 +33,7 @@ export default function Body(){
                  that not only<br></br> looks appealing but also offers comfort and functionality.
                  Whether you're<br></br> entertaining guests, relaxing with a book, or...</p>
           
-           <a href="#" className="more"><u>Read More</u></a>
+           <Link to="/sofaliving" className="more"><u>Read More</u></Link>
            </div>
            </div>
            <div className="furniture-sec1">
@@ -42,7 +44,7 @@ export default function Body(){
                 can <br></br>turn an ordinary space into an extraordinary masterpiece.
                  Whether you're<br></br> starting from scratch or refreshing an existi...</p>
           
-           <a href="#" className="more"><u>Read More</u></a>
+           <Link to="/homedecor" className="more"><u>Read More</u></Link>
            </div>
            </div>
 

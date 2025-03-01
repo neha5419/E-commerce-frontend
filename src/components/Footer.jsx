@@ -32,10 +32,10 @@ export default function Footer(){
        </div>
 
   <div className="footer-icons">
- <a href="https://www.instagram.com/nehu_.5419?igsh=ODBoMTg1YWpsNTJs"></a>   <FaInstagram color="white" size={24}/>
- <a href="https://www.linkedin.com/in/neha-phadtare-97a31a20b"></a> <FaLinkedin color="white" size={24}/>
- <a href="https://github.com/neha5419"></a> <FaGithub color="white" size={24}/>
- <a href="https://app.netlify.com/teams/nehaphadtare5419/sites"></a> <SiNetlify color="white" size={24}/>
+ <a href="https://www.instagram.com/nehu_.5419?igsh=ODBoMTg1YWpsNTJs"> <FaInstagram color="white" size={24}/></a>  
+ <a href="https://www.linkedin.com/in/neha-phadtare-97a31a20b"><FaLinkedin color="white" size={24}/></a> 
+ <a href="https://github.com/neha5419"> <FaGithub color="white" size={24}/></a> 
+ <a href="https://app.netlify.com/teams/nehaphadtare5419/sites"> <SiNetlify color="white" size={24}/></a> 
   </div>
 
 

@@ -41,7 +41,14 @@
   color: #888;
 } */
 body {
+  height: 100%; 
   font-family:  "Marcellus", serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
 }
 
 .web-name {
@@ -64,7 +71,7 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 0 20px;
-  z-index: 3;
+  z-index: 5;
 }
 
 
@@ -79,7 +86,11 @@ body {
   font-size: 1.1rem;
 }
 
-
+.head-link{
+  text-decoration: none;
+  color: #504B38;
+  
+}
 .icons {
   display: flex;
   flex-wrap: wrap;
@@ -137,6 +148,7 @@ body {
 .body{
   margin-top: 100px;
   margin-left: 100px;
+  flex:1;
 }
 .furniture-sec{
   margin-top: 200px;
@@ -145,14 +157,16 @@ body {
 height:350px;
 width:1200px;
 overflow: hidden;
+margin-bottom: 80px;
 }
 .furniture-sec1{
-  margin-top: 80px;
+  margin-bottom: 80px;
   box-shadow: 1px 2px 5px 4px rgb(233, 232, 232);
   border-radius: 10px;
 height:350px;
 width:1200px;
 overflow: hidden;
+
 }
 
 .dining-img{
@@ -189,28 +203,23 @@ overflow: hidden;
   top:10px;
   font-size: 16px;
 }
-
+.more:hover{
+  color:#666;
+}
 @media (max-width:768px){
-  .furniture-sec{
-    margin-left: -50px;
-    margin-top: 150px;
-    padding-bottom: 20px;
-    height:600px;
-    width:620px;
-  }
-  .furniture-sec1{
-    margin-left: -50px;
-    margin-top: 50px;
-     padding-bottom: 20px;
-    height:600px;
-    width:620px;
+  
+    .furniture-sec, .furniture-sec1 {
+      width: 90%; /* ✅ Responsive width */
+      height: auto; /* ✅ Allow content to define height */
+      margin: 20px auto; /* ✅ Centers content */
+      padding-bottom: 20px;
   }
 
-  .dining-img{
-    width:620px;
-    height:300px;
-    display: block;
-  }
+  .dining-img {
+    width: 100%; /* ✅ Full width */
+    height: auto; /* ✅ Maintain aspect ratio */
+}
+
   .suggestion{
     position: relative;
     top:20px;
@@ -236,12 +245,11 @@ overflow: hidden;
 .footer{
   font-family:  "Marcellus", serif !important;
   background-color: #8a7e6b;
-  margin-top: 50px;
-  position:absolute;
-  top:4000px;
-  bottom: 0px;
-  height:440px;
-  width:94vw;
+  position: relative; 
+  bottom: 0px; 
+  height: 460px;
+ 
+  width:100vw;
   border-top-right-radius: 300px;
 }
 
@@ -272,7 +280,7 @@ overflow: hidden;
 
 .footer-icons{
   margin-top: 30px;
-  margin-left: 140px;
+  margin-left: 165px;
   cursor: pointer;
  
 }
@@ -288,30 +296,20 @@ overflow: hidden;
 
 @media (max-width:768px){
   .footer{
-     height:800px;
-    position:absolute;
-    top:6200px;
+    height:auto;
+    position:relative;
+    bottom:0;
   }
+  
+  .wrap-footer {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+.about, .policy, .links {
+  margin: 20px auto; /* ✅ Centers text */
+}
 
-  .wrap-footer{
-    margin-left: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  .about{
-    margin-left:50px ;
-    line-height: 1.7;
-  }
-  .policy{
-    margin-top: 250px;
-    margin-left: -330px;
-  }
-  .links{
-    margin-top: 440px;
-    margin-left: -130px;
-  }
   .about-head{
     font-size: 1.2rem;
   }
@@ -326,10 +324,13 @@ overflow: hidden;
   .desc-foot{
     font-size: 1rem;
   }
-  .footer-icons{
-    margin-left: 40px;
-  }
-  .copyright{
-    margin-left: 70px;
-  }
+  .footer-icons {
+    margin: 20px auto; /* ✅ Centers icons */
+}
+
+.copyright {
+    text-align: center;
+    margin: 20px 0;
+}
+
 }

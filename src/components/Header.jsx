@@ -20,12 +20,12 @@ export default function Header() {
 
         
             <div className={`categories ${menuOpen ? "open" : ""}`}>
-                <p>PROJECTS</p>
-                <p>PRODUCTS</p>
-                <p>SERVICES</p>
-                <p>ABOUT US</p>
-                <p>CONTACT US</p>
-                <p>BLOGS</p>
+             <Link to="/projects" className="head-link"> PROJECTS</Link>
+            <Link to="/products"  style={{color:"#504B38",textDecoration: "none"}}>   PRODUCTS</Link>
+            <Link to="/services"  style={{color:"#504B38",textDecoration: "none"}}>  SERVICES</Link>
+             <Link to="/aboutus"  style={{color:"#504B38",textDecoration: "none"}}>    ABOUT US</Link>
+            <Link to="/contactus"  style={{color:"#504B38",textDecoration: "none"}}>   CONTACT US</Link>
+            <Link to="/blogs"  style={{color:"#504B38",textDecoration: "none"}}>   BLOGS</Link>
             </div>
             
             <ul className="icons">
