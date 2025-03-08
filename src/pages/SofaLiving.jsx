@@ -46,7 +46,7 @@ export default function SofaLiving() {
         <p className="dine-desc">
           Among all living room furniture, the sofa set stands out as the
           centrepiece, setting the tone for the entire space. Choosing the
-          perfect sofa set can be daunting, but fear not! At Maanavi Homes, we
+          perfect sofa set can be daunting, but fear not! At Goldnest, we
           understand the importance of finding the perfect sofa that combines
           comfort, style, and functionality. This guide will walk you through
           everything you need to know to choose the perfect sofa set for your
@@ -76,7 +76,7 @@ export default function SofaLiving() {
           <p className="home-setting">
             Your sofa should reflect your personal style and blend seamlessly
             with your home. Are you drawn to modern, minimalist designs, or do
-            you prefer something more classic and ornate? Maanavi Homes offers a
+            you prefer something more classic and ornate? Goldnest offers a
             wide range of styles, from modern luxury sofa sets to elegant royal
             sofas and chic contemporary sofas.
           </p>
@@ -147,7 +147,7 @@ export default function SofaLiving() {
           <p className="suit-head">5. Customization for a Personal Touch</p>
           <p className="home-setting">
             Customization allows you to create a sofa that perfectly matches
-            your needs and style. At Maanavi Homes, we emphasize customization.
+            your needs and style. At Goldnest, we emphasize customization.
             You can choose every details, from the fabric, colour, cushion
             firmness, and even the type of legs, ensuring your sofa is truly
             one-of-a-kind. This personalized approach ensures that your sofa
@@ -160,7 +160,7 @@ export default function SofaLiving() {
           <p className="home-setting">
             While style is important, comfort should never be compromised. The
             primary purpose of a sofa is to provide a comfortable place to sit
-            and relax. We at Maanavi Homes Manufacture Premium Furniture with
+            and relax. We at Goldnest Manufacture Premium Furniture with
             comfort in mind, featuring supportive cushioning, ergonomic designs,
             and soft, luxurious fabrics. Take the time to sit and test out
             different sofas to find one that feels just right for you.
@@ -202,7 +202,7 @@ export default function SofaLiving() {
           <p className="suit-head">8. Quality and Budget</p>
           <p className="home-setting">
             Investing in a high-quality sofa set ensures it will last for years
-            to come. At Maanavi Homes, we prioritize using the finest materials
+            to come. At Goldnest, we prioritize using the finest materials
             and expert craftsmanship to create sofas that stand the test of
             time. While keeping your budget in mind, remember that a sofa set
             for your living room is an investment that reflects your taste and
@@ -218,7 +218,7 @@ export default function SofaLiving() {
           <p className="home-setting">
             Choosing the perfect sofa set for your living room involves
             considering your space, style, material, comfort, colour, and
-            budget. At Maanavi Homes, we understand the importance of finding
+            budget. At Goldnest, we understand the importance of finding
             the right balance between aesthetics and functionality. Our{" "}
             <u>custom furniture store</u> offers a wide range of options to
             ensure you find the ideal sofa set that not only looks great but
@@ -288,7 +288,7 @@ export default function SofaLiving() {
 
           <p className="horz-line"></p>
           <div className="fqa-que">
-            <p>Does Maanavi Homes offer delivery and installation services?</p>
+            <p>Does Goldnest offer delivery and installation services?</p>
             <button onClick={handleServices} className="plussub">
               {services ? <RiSubtractLine /> : <GoPlus />}
             </button>

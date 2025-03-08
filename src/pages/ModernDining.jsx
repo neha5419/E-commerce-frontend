@@ -47,7 +47,7 @@ export default function ModernDining() {
             centrepiece of your dining room, a gathering place for family meals,
             and a space for hosting guests. Selecting the perfect dining table
             design can elevate your home's interior, blending functionality with
-            a touch of elegance. At Maanavi Homes, we understand the importance
+            a touch of elegance. At Golnest, we understand the importance
             of choosing a design that reflects your personal style while
             offering comfort and durability.
           </p>
@@ -262,7 +262,7 @@ export default function ModernDining() {
             there for you.
           </p>
           <p className="home-setting">
-            In unveiling these 5 modern dining tables designs, Maanavi Homes
+            In unveiling these 5 modern dining tables designs, Goldnest
             invites you to reimagine your dining space as a bastion of luxury
             and personalised elegance. Each table, with its distinct design and
             exquisite craftsmanship, stands ready to anchor your meals and
@@ -282,7 +282,7 @@ export default function ModernDining() {
           <div className="fqa-que">
             <p>
               What are the latest trends in dining table designs offered by
-              Maanavi Homes for 2024?
+              Goldnest for 2025?
             </p>
             <button onClick={handleData} className="plussub">
               {trend ? <RiSubtractLine /> : <GoPlus />}
@@ -291,7 +291,7 @@ export default function ModernDining() {
           <div>
             {trend && (
               <p className="fqa-ans">
-                At Maanavi Homes, we stay ahead of the curve with the latest
+                At Goldnest, we stay ahead of the curve with the latest
                 dining table design trends. Our collection features a mix of
                 traditional and contemporary styles, including modern dining
                 table designs with sleek, minimalist aesthetics and luxury
@@ -314,7 +314,7 @@ export default function ModernDining() {
             <div>
               {style && (
                 <p className="fqa-ans">
-                  Choosing the right dining table size from Maanavi Homes
+                  Choosing the right dining table size from Goldnest
                   involves considering the dimensions of your dining room and
                   the number of people you typically host. Our experts can help
                   you measure your space and recommend tables that provide ample
@@ -328,7 +328,7 @@ export default function ModernDining() {
             <p className="horz-line"></p>
             <div className="fqa-que">
               <p>
-                What customization options does Maanavi Homes offer for dining
+                What customization options does Goldnest offer for dining
                 tables?
               </p>
               <button onClick={handleQuality} className="plussub">
@@ -368,7 +368,7 @@ export default function ModernDining() {
               {options && (
                 <p className="fqa-ans">
                   Maintaining the quality and appearance of your luxury dining
-                  table from Maanavi Homes involves regular cleaning and care.
+                  table from Goldnest involves regular cleaning and care.
                   Care instructions vary based on materials but generally
                   include using coasters, wiping spills promptly, and avoiding
                   abrasive cleaners to maintain the pristine condition.

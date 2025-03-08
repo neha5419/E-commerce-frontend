@@ -135,6 +135,7 @@ body {
 @media (max-width: 768px) {
   .header {
     padding: 0 10px; 
+    
   }
 
   .icons {
@@ -208,13 +209,24 @@ overflow: hidden;
 }
 @media (max-width:768px){
   
-    .furniture-sec, .furniture-sec1 {
+     .furniture-sec1 {
       width: 90%; /* ✅ Responsive width */
       height: auto; /* ✅ Allow content to define height */
-      margin: 20px auto; /* ✅ Centers content */
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: -20px;
+      margin-right: auto; /* ✅ Centers content */
       padding-bottom: 20px;
   }
-
+  .furniture-sec {
+    width: 90%; /* ✅ Responsive width */
+    height: auto; /* ✅ Allow content to define height */
+    margin-top: 120px; 
+    margin-left:-20px ;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
   .dining-img {
     width: 100%; /* ✅ Full width */
     height: auto; /* ✅ Maintain aspect ratio */
@@ -280,17 +292,19 @@ overflow: hidden;
 
 .footer-icons{
   margin-top: 30px;
-  margin-left: 165px;
+  margin-left: 180px;
   cursor: pointer;
+  
  
 }
 .footer-icons a{
   margin-right: 30px;
+  
 }
 .copyright{
   color: white;
   margin-top: 40px;
-  margin-left: 170px;
+  margin-left: 180px;
   font-size: 14px;
 }
 
@@ -298,7 +312,7 @@ overflow: hidden;
   .footer{
     height:auto;
     position:relative;
-    bottom:0;
+    bottom:0px;
   }
   
   .wrap-footer {
@@ -325,7 +339,7 @@ overflow: hidden;
     font-size: 1rem;
   }
   .footer-icons {
-    margin: 20px auto; /* ✅ Centers icons */
+    margin-left:150px; /* ✅ Centers icons */
 }
 
 .copyright {

@@ -16,6 +16,11 @@ import AboutUs from './pages/AboutUs.jsx';
 import ModernDining from './pages/ModernDining.jsx';
 import SofaLiving from './pages/SofaLiving.jsx';
 import HomeDecor from './pages/HomeDecor.jsx';
+import DressTable from './pages/DressTable.jsx';
+import DesignerFurniture from './pages/DesignerFurniture.jsx';
+import FabricSofa from './pages/FabricSofa.jsx';
+import ModernFur from './pages/ModernFur.jsx';
+import FurnitureSec from './pages/FurnitureSec.jsx';
 function App() {
 
   const router=createBrowserRouter([
@@ -69,6 +74,21 @@ function App() {
         },{
           path:"/homedecor",
           element:<HomeDecor/>
+        },{
+          path:"/dresstable",
+          element:<DressTable/>
+        },{
+          path:"/designerfurniture",
+          element:<DesignerFurniture/>
+        },{
+          path:"/fabricsofa",
+          element:<FabricSofa/>
+        },{
+          path:"/modernfur",
+          element:<ModernFur/>
+        },{
+          path:"/furniture-sec",
+          element:<FurnitureSec/>
         }
       ]
     }

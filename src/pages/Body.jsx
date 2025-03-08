@@ -56,7 +56,7 @@ export default function Body(){
                  mean<br></br> sacrificing style and functionality. In fact, 
                 it’s an opportunity to get creative<br></br> and make the most out of every inch. Custom...</p>
           
-           <a href="#" className="more"><u>Read More</u></a>
+           <Link to="/dresstable" className="more"><u>Read More</u></Link>
            </div>
            </div>
 
@@ -68,7 +68,7 @@ export default function Body(){
                  there is<br></br> something profoundly alluring about owning designer furniture.
                  It's not<br></br> just about having a piece that stands out; it embodies un...</p>
           
-           <a href="#" className="more"><u>Read More</u></a>
+           <Link to="/designerfurniture" className="more"><u>Read More</u></Link>
            </div>
            </div>
 
@@ -80,7 +80,7 @@ export default function Body(){
                  for a new one?<br></br> Well you are in the right place! When deciding on the right upholstery,
                  <br></br>it is not only based on aesthetics but also com...</p>
           
-           <a href="#" className="more"><u>Read More</u></a>
+           <Link to="/fabricsofa" className="more"><u>Read More</u></Link>
            </div>
            </div>
 
@@ -92,7 +92,7 @@ export default function Body(){
                  gather with<br></br> loved ones, entertain guests, and unwind after a long day.
                  It’s essential to<br></br> furnish this space thoughtfully, blending comf...</p>
           
-           <a href="#" className="more"><u>Read More</u></a>
+           <Link to="/modernfur" className="more"><u>Read More</u></Link>
            </div>
            </div>
 
@@ -104,7 +104,7 @@ export default function Body(){
                 <br></br> Today the landscape of furniture design is now dominated 
                 by the lifestyle<br></br> and personalities of its owners, to ensure every co...</p>
           
-           <a href="#" className="more"><u>Read More</u></a>
+           <Link to="/furniture-sec" className="more"><u>Read More</u></Link>
            </div>
            </div>
 
