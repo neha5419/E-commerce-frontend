@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../css/DiningDesc.css";
 import { GoPlus } from "react-icons/go";
+import { useNavigate } from "react-router-dom";
 import { RiSubtractLine } from "react-icons/ri";
 export default function HomeDecor() {
   const [color, setColor] = useState(false);
@@ -8,6 +9,10 @@ export default function HomeDecor() {
   const [decor, setDecor] = useState(false);
   const [timeless, setTimeless] = useState(false);
   const[mix,setMix]=useState(false);
+  const navigate=useNavigate();
+  function handleNavigate(){
+    navigate("/contactus");
+  }
 
   function handleColor() {
     setColor(!color);
@@ -291,7 +296,7 @@ export default function HomeDecor() {
           </p>
         </div>
 
-        <button type="button" className="contact-us">
+        <button type="button" className="contact-us" onClick={handleNavigate}>
           CONTACT US
         </button>
 

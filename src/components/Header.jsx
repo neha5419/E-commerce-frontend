@@ -6,17 +6,21 @@ import { LuLogIn } from "react-icons/lu";
 import { IoCartOutline } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GiGoldNuggets } from "react-icons/gi";
-
+import { useNavigate } from "react-router-dom";
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const navigate=useNavigate();
+  function handleClick(){
+  navigate("/");
+  }
     return (
         <div className="header">
             
             <RxHamburgerMenu className="hamburger" onClick={() => setMenuOpen(!menuOpen)} size={24} />
 
             
-            <p className="web-name"><GiGoldNuggets /> Goldnest</p>
+            <p className="web-name" onClick={handleClick}><GiGoldNuggets /> Goldnest</p>
 
         
             <div className={`categories ${menuOpen ? "open" : ""}`}>

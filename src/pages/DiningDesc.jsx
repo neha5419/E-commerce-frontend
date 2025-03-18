@@ -1,13 +1,14 @@
 import { useState } from "react";
 import "../css/DiningDesc.css";
 import { GoPlus } from "react-icons/go";
+import { useNavigate } from "react-router-dom";
 import { RiSubtractLine } from "react-icons/ri";
 export default function DiningDesc() {
   const [data, showData] = useState(false);
   function handleans() {
     showData(!data);
   }
-
+  const navigate=useNavigate();
   const [questyle, setQueStyle] = useState(false);
   function handleStyle() {
     setQueStyle(!questyle);
@@ -28,6 +29,10 @@ export default function DiningDesc() {
   const [dining, setDining] = useState(false);
   function handleDining() {
     setDining(!dining);
+  }
+
+  function handleNavigate(){
+    navigate("/contactus");
   }
   return (
     <div className="main">
@@ -276,7 +281,7 @@ export default function DiningDesc() {
           </p>
         </div>
 
-        <button type="button" className="contact-us">
+        <button type="button" className="contact-us" onClick={handleNavigate}>
           CONTACT US
         </button>
 

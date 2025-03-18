@@ -1,6 +1,11 @@
 import { useState } from "react";
 import "../css/Register.css";
 import { GiGoldNuggets } from "react-icons/gi";
+import axios from "axios";
+import API_URL from "../utils/constants.jsx";
+import {ToastContainer,toast} from "react-toastify";
+import BeatLoader from "react-spinners/BeatLoader";
+import {useNavigate} from "react-router-dom";
 export default function Register() {
   const [data, setData] = useState({
     fullName: "",
@@ -9,6 +14,8 @@ export default function Register() {
     phoneNumber: "",
     shippingAddress: "",
   });
+  const navigate=useNavigate();
+  const[loading,setLoading]=useState(false);
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -20,8 +27,32 @@ export default function Register() {
       };
     });
   }
+  function handleNavigate(){
+   navigate("/verify-you");
+  }
+ async function handleClick(){
+  setLoading(true);
+  try{
+      const response=await axios.post(`${API_URL}/users/register`,data);
+      console.log(response);
+      toast.success("User Registered Successfully");
+      setData({
+        fullName:"",
+        email:"",
+        password:"",
+        phoneNumber:"",
+        shippingAddress:""
+      })
+  }catch(error){
+    console.log(error);
+    toast.error("User cannot be registered");
+  }finally{
+    setLoading(false);
+  }
+  }
   return (
     <div className="main">
+      <ToastContainer/>
       <div className="form">
         <div>
           <div className="img-reg"></div>
@@ -93,8 +124,11 @@ export default function Register() {
             placeholder="Enter Address"
             onChange={handleChange}
           />
-          <p className="reg-btn">SIGN UP</p>
-         
+          <div className="reg-btn"><button onClick={handleClick}>{loading?
+          <BeatLoader color="white" size={15}/>
+          :
+          "SIGN UP"}</button></div>
+         <button onClick={handleNavigate} className="verify-btn">VERIFY OTP AFTER SIGN UP</button>
         </div>
       </div>
     </div>

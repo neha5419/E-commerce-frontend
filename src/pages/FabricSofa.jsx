@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { GoPlus } from "react-icons/go";
 import { RiSubtractLine } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 export default function FabricSofa() {
   const [bestsofa, setBestSofa] = useState(false);
   const [custom, setCustom] = useState(false);
   const[clean,setClean]=useState(false);
-
+  const navigate=useNavigate();
+  function handleNavigate(){
+    navigate("/contactus");
+  }
 
   function handleSofa() {
     setBestSofa(!bestsofa);
@@ -227,7 +231,7 @@ export default function FabricSofa() {
           </p>
         </div>
 
-        <button type="button" className="contact-us">
+        <button type="button" className="contact-us" onClick={handleNavigate}>
           CONTACT US
         </button>
 

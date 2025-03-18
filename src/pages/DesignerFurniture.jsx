@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { GoPlus } from "react-icons/go";
 import { RiSubtractLine } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 export default function DesignerFurniture() {
   const [regular, setRegular] = useState(false);
   const [quality, setQuality] = useState(false);
   const[standard,setStandard]=useState(false);
   const[decormatch,setDecorMatch]=useState(false);
+  const navigate=useNavigate();
   function handleReg() {
     setRegular(!regular);
   }
@@ -17,6 +19,9 @@ export default function DesignerFurniture() {
   }
   function handleDecor(){
    setDecorMatch(!decormatch);
+  }
+  function handleNavigate(){
+    navigate("/contactus");
   }
   return (
     <div className="main">
@@ -142,7 +147,7 @@ export default function DesignerFurniture() {
           options that can transform your space into a work of art.
         </p>
 
-        <button type="button" className="contact-us">
+        <button type="button" className="contact-us" onClick={handleNavigate}>
           CONTACT US
         </button>
 

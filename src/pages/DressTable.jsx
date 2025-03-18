@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../css/DiningDesc.css";
 import { GoPlus } from "react-icons/go";
 import { RiSubtractLine } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 
 export default function DressTable() {
   const [custom, setCustom] = useState(false);
@@ -9,7 +10,7 @@ export default function DressTable() {
   const [design, setDesign] = useState(false);
   const [functional, setFunctional] = useState(false);
   const[tips,setTips]=useState(false);
-
+  const navigate=useNavigate();
   function handleCustom() {
     setCustom(!custom);
   }
@@ -20,6 +21,9 @@ export default function DressTable() {
 
   function handleDesign() {
     setDesign(!design);
+  }
+  function handleNavigate(){
+    navigate("/contactus");
   }
 
   function handleFunction() {
@@ -149,7 +153,7 @@ export default function DressTable() {
           </p>
         </div>
 
-        <button type="button" className="contact-us">
+        <button type="button" className="contact-us" onClick={handleNavigate}>
           CONTACT US
         </button>
 

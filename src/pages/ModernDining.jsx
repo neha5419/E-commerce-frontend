@@ -2,11 +2,16 @@ import { useState } from "react";
 import "../css/DiningDesc.css";
 import { GoPlus } from "react-icons/go";
 import { RiSubtractLine } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 export default function ModernDining() {
   const [trend, setTrend] = useState(false);
   const [style, setStyle] = useState(false);
   const [options, setOptions] = useState(false);
   const [quality, setQuality] = useState(false);
+  const navigate=useNavigate();
+  function handleNavigate(){
+    navigate("/contactus");
+  }
   function handleData() {
     setTrend(!trend);
   }
@@ -272,7 +277,7 @@ export default function ModernDining() {
           </p>
         </div>
 
-        <button type="button" className="contact-us">
+        <button type="button" className="contact-us" onClick={handleNavigate}>
           CONTACT US
         </button>
 

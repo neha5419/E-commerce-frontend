@@ -2,6 +2,8 @@ import { useState } from "react";
 import "../css/DiningDesc.css";
 import { GoPlus } from "react-icons/go";
 import { RiSubtractLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function SofaLiving() {
   const [material, setMaterial] = useState(false);
@@ -9,6 +11,7 @@ export default function SofaLiving() {
   const [replace, setReplace] = useState(false);
   const [services, setServices] = useState(false);
   const [visit, setVisit] = useState(false);
+  const navigate=useNavigate();
   function handleMaterial() {
     setMaterial(!material);
   }
@@ -23,6 +26,9 @@ export default function SofaLiving() {
   }
   function handleVisit() {
     setVisit(!visit);
+  }
+  function handleNavigate(){
+    navigate("/contactus");
   }
   return (
     <div className="main">
@@ -226,8 +232,10 @@ export default function SofaLiving() {
           </p>
         </div>
 
-        <button type="button" className="contact-us">
+        <button type="button" className="contact-us" onClick={handleNavigate}>
+          
           CONTACT US
+          
         </button>
 
         <div className="fqa-section">

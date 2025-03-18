@@ -1,11 +1,16 @@
 import { useState } from "react";
 import { GoPlus } from "react-icons/go";
 import { RiSubtractLine } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 export default function FurnitureSec() {
   const [luxury, setLuxury] = useState(false);
   const [smart, setSmart] = useState(false);
   const [trend, setTrend] = useState(false);
   const[upgrades,setUpgrade]=useState(false);
+  const navigate=useNavigate();
+  function handleNavigate(){
+    navigate("/contactus");
+  } 
   function handleLux() {
     setLuxury(!luxury);
   }
@@ -232,7 +237,7 @@ export default function FurnitureSec() {
           (and-in trend).
         </p>
 
-        <button type="button" className="contact-us">
+        <button type="button" className="contact-us" onClick={handleNavigate}>
           CONTACT US
         </button>
 

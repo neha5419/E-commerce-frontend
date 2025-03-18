@@ -1,5 +1,5 @@
  .form{
-    height:700px;
+    height:750px;
     width:800px;
     margin:0px auto;
     background-color:white;
@@ -11,9 +11,27 @@
     border-radius: 10px;
   
 }
+.verify-form{
+    height:500px;
+    width:800px;
+    margin:0px auto;
+    background-color:white;
+    margin-top:140px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    box-shadow: 1px 2px 6px 2px grey;
+    border-radius: 10px;
+}
 .img-reg{
     width:400px;
-    height:700px;
+    height:750px;
+    background-image: linear-gradient(to top right,#D7D3BF ,#C1BAA1 ,#B0A695 30% ,#4d463d 70%);
+    position: absolute;
+}
+.verify-img-reg{
+    width:400px;
+    height:500px;
     background-image: linear-gradient(to top right,#D7D3BF ,#C1BAA1 ,#B0A695 30% ,#4d463d 70%);
     position: absolute;
 }
@@ -34,7 +52,7 @@ margin-left: 40px;
     color:#eeeeee;
 }
 .reg-btn{
-    padding:15px 0px;
+    padding:10px 0px;
     width: 200px;
     margin: 40px auto;
     border: 1px solid #eeeeee;
@@ -43,6 +61,44 @@ margin-left: 40px;
     text-align: center;
     background-color: #4d463d;
     font-weight: 500;
+    
+}
+.verify-btn{
+    padding: 20px 0px;
+    border: 1px solid #eeeeee;
+    border-radius: 40px;
+    color:#eeeeee;
+    width: 200px;
+    margin-left: 55px;
+    text-align: center;
+    background-color: #4d463d;
+    font-weight: 500;
+}
+.verify-btn:hover{
+    background-color: white;
+border: 1px solid #4d463d;
+
+color:#4d463d;
+}
+.reg-btn button{
+    background-color: #4d463d;
+    
+    display: block;
+    width:100%;
+    height:100%;
+    
+    
+    padding: 10px ;
+    
+    border:none;
+    border-radius: 40px;
+    color:#eeeeee;
+    text-align: center;
+    font-weight: 500;
+}
+.reg-btn button:hover{
+    background-color: white;
+    color:#4d463d;
 }
 .reg-btn:hover{
 background-color: white;
@@ -97,6 +153,50 @@ color:#4d463d;
     background-color:rgb(236, 235, 235);
     margin-bottom: 15px;
 } 
+.popup {
+    position: fixed;
+    z-index:5;
+    top: -100px; /* Start off-screen */
+    left: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Slide-in effect */
+.popup.slide-in {
+    transform: translateY(120px); /* Slides in from top */
+}
+
+/* Slide-out effect */
+.popup.slide-out {
+    transform: translateY(-100px); /* Slides out */
+    opacity: 0;
+}
+
+.popup button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup button:first-child {
+    background-color: green;
+    color: white;
+}
+
+.popup button:last-child {
+    background-color: red;
+    color: white;
+}
 
 /* For Tablets (Width: 768px and below) */
  @media screen and (max-width: 768px) {
@@ -107,7 +207,16 @@ color:#4d463d;
         align-items: center;
         margin-top: 140px;
     }
-
+    .verify-form{
+        width: 90%;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        margin-top: 140px;
+    }
+    .verify-img-reg{
+       display: none;
+    }
     .img-reg {
         display: none;
        
@@ -139,6 +248,10 @@ color:#4d463d;
     .reg-btn, .signup-btn {
         width: 90%;
         text-align: center;
+    }
+    .verify-btn{
+        width: 90%;
+        margin-left: 20px;
     }
 }
 

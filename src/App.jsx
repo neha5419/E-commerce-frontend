@@ -21,6 +21,9 @@ import DesignerFurniture from './pages/DesignerFurniture.jsx';
 import FabricSofa from './pages/FabricSofa.jsx';
 import ModernFur from './pages/ModernFur.jsx';
 import FurnitureSec from './pages/FurnitureSec.jsx';
+import VerifyOtp from './pages/VerifyOtp.jsx';
+import ForgetPass from './pages/ForgetPass.jsx';
+import GetOtp from './pages/GetOtp.jsx';
 function App() {
 
   const router=createBrowserRouter([
@@ -89,6 +92,15 @@ function App() {
         },{
           path:"/furniture-sec",
           element:<FurnitureSec/>
+        },{
+          path:"/verify-you",
+          element:<VerifyOtp/>
+        },{
+          path:"/get-otp",
+          element:<GetOtp/>
+        },{
+          path:"/forget-pass",
+          element:<ForgetPass/>
         }
       ]
     }

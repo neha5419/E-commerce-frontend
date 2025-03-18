@@ -1,12 +1,17 @@
 import { useState } from "react";
 import { GoPlus } from "react-icons/go";
 import { RiSubtractLine } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 export default function ModernFur() {
   const [section, setSection] = useState(false);
   const [coffee, setCoffee] = useState(false);
  const[chair,setChair]=useState(false);
 const[console,setConsole]=useState(false);
 const[rug,setRug]=useState(false);
+const navigate=useNavigate();
+function handleNavigate(){
+  navigate("/contactus");
+}
   function handleSec() {
     setSection(!section);
   }
@@ -161,7 +166,7 @@ const[rug,setRug]=useState(false);
           transform your living room into a comfortable and inviting retreat.
         </p>
 
-        <button type="button" className="contact-us">
+        <button type="button" className="contact-us" onClick={handleNavigate}>
           CONTACT US
         </button>
 
